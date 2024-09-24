@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+tuto.access_test_model,access_test_model,tuto.model_test_model,base.group_user,1,1,1,1
+tuto.access_types,access_types,tuto.model_types,base.group_user,1,1,1,1
+tuto.access_agent,access_agent,tuto.model_agent,base.group_user,1,1,1,1
+tuto.access_customer,access_customer,tuto.model_customer,base.group_user,1,1,1,1
+tuto.access_tag,access_tag,tuto.model_tag,base.group_user,1,1,1,1
+tuto.access_offer,access_offer,tuto.model_offer,base.group_user,1,1,1,1

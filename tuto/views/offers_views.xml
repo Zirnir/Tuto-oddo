@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="action_offer" model="ir.actions.act_window">
+        <field name="name">Offers</field>
+        <field name="res_model">offer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="action_offer_type" model="ir.actions.act_window">
+        <field name="name">Offers</field>
+        <field name="res_model">offer</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('property_type_id', '=', active_id)]</field>
+    </record>
+</odoo>
