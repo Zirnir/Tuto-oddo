@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_auto_search" model="ir.ui.view">
+        <field name="name">auto.search</field>
+        <field name="model">auto</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="name"/>           
+            </search>
+        </field>
+    </record>
+
+    <record id="view_auto_form" model="ir.ui.view">
+        <field name="name">auto.form</field>
+        <field name="model">auto</field>
+        <field name="arch" type="xml">
+            <form string="Form">
+                <group col="2">
+                    <group>
+                        <field name="name"/> 
+                        <field name="marque_id"/> 
+                        <field name="mod_id"/> 
+                        <field name="price"/> 
+                    </group>
+                    <group>
+                        <field name="img" widget="image" options="{'no_open': True}"/> 
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Description">
+                        <group>
+                            <field name="description"/> 
+                            <field name="type_id"/> 
+                            <field name="carbuant"/> 
+                        </group>
+                    </page>
+                    <page string="Options">
+                        <group>
+                            <field name="option"/>
+                            <field name="option_ids" widget="many2many_tags" invisible="option == False"/>
+                        </group>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+    <record id="view_auto_tree" model="ir.ui.view">
+        <field name="name">auto.tree</field>
+        <field name="model">auto</field>
+        <field name="arch" type="xml">
+            <tree string="List">
+                    <field name="name"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

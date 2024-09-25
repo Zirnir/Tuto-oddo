@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+auto.access_auto,access_auto,auto.model_auto,base.group_user,1,1,1,1
+auto.access_type,access_type,auto.model_type,base.group_user,1,1,1,1
+auto.access_marque,access_marque,auto.model_marque,base.group_user,1,1,1,1
+auto.access_mod,access_mod,auto.model_mod,base.group_user,1,1,1,1
+auto.access_option,access_option,auto.model_option,base.group_user,1,1,1,1

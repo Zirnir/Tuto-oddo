@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="mod_action" model="ir.actions.act_window">
+        <field name="name">mod</field>
+        <field name="res_model">mod</field>
+        <field name="view_mode">tree,form</field>
+    </record>  
+    <record id="view_mod_form" model="ir.ui.view">
+        <field name="name">mod.form</field>
+        <field name="model">mod</field>
+        <field name="arch" type="xml">
+            <form string="Form">
+                <group>
+                    <field name="name"/> 
+                    <field name="marque_id"/> 
+                    <field name="option_ids"/> 
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_mod_tree" model="ir.ui.view">
+        <field name="name">mod.tree</field>
+        <field name="model">mod</field>
+        <field name="arch" type="xml">
+            <tree string="List">
+                    <field name="name"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
